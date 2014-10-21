@@ -1,6 +1,13 @@
+# Boxen personal settings for mmickan
 class people::mmickan {
   git::config::global { 'user.email':
     value => 'mark.mickan@netspot.com.au',
+  }
+  git::config::global { 'user.name':
+    value => 'Mark Mickan',
+  }
+  git::config::global { 'color.ui':
+    value => 'auto',
   }
 
   include osx::global::tap_to_click
@@ -40,7 +47,7 @@ class people::mmickan {
     'rodjek/vim-puppet',
     'godlygeek/tabular',
   ]: }
-  file { "${vim::vimrc}":
+  file { $vim::vimrc:
     target  => "/Users/${::boxen_user}/.dotfiles/.vimrc",
     require => Repository["/Users/${::boxen_user}/.dotfiles"],
   }
