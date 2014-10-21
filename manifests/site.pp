@@ -93,7 +93,9 @@ node default {
     version     => '4.3.18',
     patch_level => '96516',
   }
-  include vagrant
+  class { 'vagrant':
+    version => '1.6.5',
+  }
   include packer
   include dockutil
   include python
