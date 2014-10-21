@@ -4,9 +4,24 @@ GITHUBTARBALL
     boxen (3.7.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-clipmenu
+  specs:
+    clipmenu (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-dnsmasq
   specs:
     dnsmasq (2.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dockutil
+  specs:
+    dockutil (0.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-fish
+  specs:
+    fish (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-foreman
@@ -54,6 +69,16 @@ GITHUBTARBALL
     openssl (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-osx
+  specs:
+    osx (2.7.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-packer
+  specs:
+    packer (1.3.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-phantomjs
   specs:
     phantomjs (2.3.0)
@@ -62,6 +87,11 @@ GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-python
+  specs:
+    python (2.0.0.beta4)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -77,6 +107,26 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vagrant
+  specs:
+    vagrant (3.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-vim
+  specs:
+    vim (1.0.5)
+
+GITHUBTARBALL
+  remote: boxen/puppet-virtualbox
+  specs:
+    virtualbox (1.0.13)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wunderlist
+  specs:
+    wunderlist (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -100,7 +150,10 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.7.0)
+  clipmenu (>= 0)
   dnsmasq (= 2.0.0)
+  dockutil (>= 0)
+  fish (>= 0)
   foreman (= 1.2.0)
   gcc (= 2.2.0)
   git (= 2.5.0)
@@ -112,10 +165,18 @@ DEPENDENCIES
   nginx (= 1.4.3)
   nodejs (= 3.8.1)
   openssl (= 1.0.0)
+  osx (>= 0)
+  packer (>= 0)
   phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
+  python (>= 0)
   repository (= 2.3.0)
   ruby (= 8.1.4)
   stdlib (= 4.2.1)
   sudo (= 1.0.0)
+  vagrant (>= 0)
+  vim (>= 0)
+  virtualbox (= 1.0.13)
+  wunderlist (>= 0)
   xquartz (= 1.2.1)
+

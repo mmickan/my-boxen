@@ -88,4 +88,18 @@ node default {
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  class { 'virtualbox':
+    version     => '4.3.18',
+    patch_level => '96516',
+  }
+  include vagrant
+  include packer
+  include dockutil
+  include python
+
+  repository { "/Users/${::boxen_user}/.dotfiles":
+    source   => "${::github_login}/dotfiles",
+    provider => 'git',
+  }
 }

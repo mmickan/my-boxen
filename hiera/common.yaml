@@ -1,0 +1,3 @@
+---
+# need recent version of rbenv to support fish
+ruby::rbenv::ensure: HEAD
