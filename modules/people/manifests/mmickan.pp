@@ -32,6 +32,11 @@ class people::mmickan {
     require => Repository["/Users/${::boxen_user}/.dotfiles"],
   }
 
+  file { "/Users/${::boxen_user}/.ssh/config":
+    target  => "/Users/${::boxen_user}/.dotfiles/.ssh/config",
+    require => Repository["/Users/${::boxen_user}/.dotfiles"],
+  }
+
   class { 'vim':
     require => Class['python'],
   }
