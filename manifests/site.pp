@@ -98,7 +98,18 @@ node default {
   }
   include packer
   include dockutil
+
   include python
+
+  package { 'bash': }
+
+  class { 'go':
+    chgo_version => 'master',
+    chgo_source  => 'mmickan/chgo',
+    require      => Package['bash'],
+  }
+  go::version { '1.3.3': }
+  go::version { '1.2.2': }
 
   repository { "/Users/${::boxen_user}/.dotfiles":
     source   => "${::github_login}/dotfiles",
